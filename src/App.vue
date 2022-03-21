@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app">
     <CalculatorMain
 
     />
@@ -18,12 +18,30 @@ export default {
 </script>
 
 <style>
-#app {
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  background: #283637;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 370px;
 }
 </style>
